@@ -2,7 +2,7 @@ resource "aws_internet_gateway" "eks_igw" {
   vpc_id = aws_vpc.eks_vpc.id
 
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "eks_igw"
     }
@@ -17,7 +17,7 @@ resource "aws_route_table" "eks_public_route_table" {
     gateway_id = aws_internet_gateway.eks_igw.id
   }
   tags = merge(
-    local.tags,
+    var.tags,
     {
       Name = "eks-public-rt"
     }
