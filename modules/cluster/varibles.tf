@@ -14,3 +14,6 @@ variable "public_subnet_1b" {
   type        = string
   description = "subnets to create EKS cluster AZ 1b"
 }
+output "eks_vpc_config" {
+  value = aws_eks_cluster.eks.vpc_config
+}
