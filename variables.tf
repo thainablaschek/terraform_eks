@@ -3,7 +3,7 @@ variable "cidr_block" {
   description = "CIDR usado na VPC"
 }
 variable "project_name" {
-    type        = string
-    description = "Nome do projeto para tagueamento dos recursos"
-  
+  type        = string
+  description = "Nome do projeto para tagueamento dos recursos"
+
 }
