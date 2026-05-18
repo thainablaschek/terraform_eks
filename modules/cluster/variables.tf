@@ -16,3 +16,7 @@ variable "subnet_public_1b" {
   type        = string
   description = "IDs das subnets públicas para o EKS Cluster"
 }
+variable "user_arn_cluster_access_entry" {
+  type        = string
+  description = "ARN do usuário para acesso à API do EKS Cluster"
+}

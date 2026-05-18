@@ -7,3 +7,9 @@ variable "project_name" {
   description = "Nome do projeto para tagueamento dos recursos"
 
 }
+
+variable "user_arn_cluster_access_entry" {
+  type        = string
+  description = "ARN do IAM principal que receberá AmazonEKSClusterAdminPolicy. Deixe em branco para não criar access entry adicional."
+  default     = ""
+}
